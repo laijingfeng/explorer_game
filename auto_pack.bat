@@ -14,8 +14,10 @@ cd /D %UNITY_PATH%
 
 echo Packing...
 
-start /wait Unity.exe -projectPath %PROJECT_PATH% -executeMethod Pack.Build -quit -batchmode
+::start /wait Unity.exe -projectPath %PROJECT_PATH% -executeMethod Pack.Build -quit -batchmode
 
 echo Finish.
+
+start /wait python qr.py lai jing 
 
 pause
